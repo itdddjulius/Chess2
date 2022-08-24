@@ -1,9 +1,12 @@
 <div class="background">
-  <br />    
+  <br />
     <div class="booyah-box col-10 offset-1">
-      <h2>Sign Up</h2>
+      <h2>
+        <%= link_to image_tag('miked.png', style: 'width:60px; height:60px;'), root_path, class: "navbar-brand", style: 'padding-left:15px; color: WHITE;' %>
+        Sign Up
+      </h2>
     <br />
-  
+
       <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= f.error_notification %>
         <div class="form-inputs">
@@ -20,5 +23,5 @@
       <br />
       <%= render "devise/shared/links" %>
     </div>
-    <br />        
+    <br />
 </div>
